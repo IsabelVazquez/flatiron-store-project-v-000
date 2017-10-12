@@ -5,6 +5,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :inventory
       t.integer :price
       t.belongs_to :category, index: true
+      t.belongs_to :cart, index: true
 
       t.timestamps null: false
     end
