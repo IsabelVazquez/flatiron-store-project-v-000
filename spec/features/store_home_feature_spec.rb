@@ -73,13 +73,13 @@ describe 'Feature Test: Store', :type => :feature do
           visit store_path
           expect(page).to have_content("Signed in as #{@user.email}")
         end
-        #TBD
+
         it "has a sign out link" do
           visit store_path
           expect(page).to have_link("Sign out")
         end
 
-        #TBD
+        
         it "lets users sign out" do
           visit store_path
           click_link("Sign out")

@@ -15,3 +15,4 @@ Item.all.each do |item|
 end
 
 User.create(email:'test@test.com', password: '123456789')
+User.create(email:'second@second.com', password: '123456789')
